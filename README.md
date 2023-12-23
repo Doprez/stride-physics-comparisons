@@ -13,11 +13,13 @@
 ## Notes
 This is NOT a direct comparison between Bullet and Bepu, this is a comparison at them being integrated into Stride. 
 
-##Changed settings
-Bullet
+## Changed settings
+
+### Bullet
 - CCD off
 - Can sleep on
-Bepu
+
+### Bepu
 - faster timestep at 8 instead of 16 (less performant but better accuracy)
 
 Want more? check out Nicogos demos! https://www.youtube.com/@Nicogo17/videos
