@@ -5,9 +5,10 @@
 - Bepu multi - 21136 before crash
 
 ### My PC 
-Ryzen 9 5950x
-RTX 3080
-32GB RAM
+
+- Ryzen 9 5950x
+- RTX 3080
+- 32GB RAM
 
 ## Notes
 This is NOT a direct comparison between Bullet and Bepu, this is a comparison at them being integrated into Stride. 
