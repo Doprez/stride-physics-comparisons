@@ -1,0 +1,41 @@
+!PrefabAsset
+Id: d62f0453-1037-407b-8625-7ac006946220
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! cf1a36e4-f9b8-45b5-9bec-544de3afbdc7
+    Parts:
+        -   Entity:
+                Id: cf1a36e4-f9b8-45b5-9bec-544de3afbdc7
+                Name: BepuCube
+                Components:
+                    57bdb9dde34cb7002e613f32621c456b: !TransformComponent
+                        Id: 384affb5-c886-4253-8480-9edfffa30d72
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    72fd693c02bc601ef5416a7f81f1b8d7: !Stride.BepuPhysics.Components.Containers.BodyContainerComponent,Stride.BepuPhysics
+                        Id: 627cd060-495e-4f5c-90e5-2bf735624dc0
+                        SimulationIndex: 0
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        ColliderGroupMask: 255
+                        ColliderFilterByDistanceId: 0
+                        ColliderFilterByDistanceX: 0
+                        ColliderFilterByDistanceY: 0
+                        ColliderFilterByDistanceZ: 0
+                        IgnoreGlobalGravity: false
+                        Kinematic: false
+                        SleepThreshold: 0.01
+                        MinimumTimestepCountUnderThreshold: 32
+                    b2bef617e635818ba95e67607a177e21: !Stride.BepuPhysics.Components.Colliders.BoxColliderComponent,Stride.BepuPhysics
+                        Id: 5868bb99-a9d6-4210-8bca-2e6cece92bbb
+                        Mass: 1.0
+                        Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                    f5aafd70825228bf6f90ce3c65ebddd8: !InstanceComponent
+                        Id: 6a795e6c-9351-4c93-b500-68a6dfc1a02a
+                        Master: null

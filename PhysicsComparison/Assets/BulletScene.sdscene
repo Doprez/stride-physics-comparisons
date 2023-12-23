@@ -1,0 +1,179 @@
+!SceneAsset
+Id: 7ab2e8b7-41e0-445e-8b36-c6cfb444e38c
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 8c8adcdd-3411-4f2e-b3ac-1ea0dc00302c
+        - ref!! c4ad98ac-e2e8-4829-8c88-6ee16cf99eb7
+        - ref!! c050fedd-6737-4275-90d7-fe341b773200
+        - ref!! becd47bf-09c4-46e5-be18-0a64d06ac13e
+        - ref!! 1bca47e4-61d1-4360-90f2-6d6c4c40c416
+        - ref!! 362fa37b-8f3a-4f5c-8dac-a693fec84275
+        - ref!! e439ea40-d38b-4524-afbe-cd926c6f452d
+    Parts:
+        -   Entity:
+                Id: 1bca47e4-61d1-4360-90f2-6d6c4c40c416
+                Name: Spawner
+                Components:
+                    c84819fc50953cc1dfc8565cdd98eced: !TransformComponent
+                        Id: cc7123a4-c36d-40e1-b6b4-a4d08904964b
+                        Position: {X: 0.0, Y: 39.9404, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2bdd895abdea293399c9020d4aea25ca: !PhysicsComparison.Code.PrefabSpawner,PhysicsComparison
+                        Id: 3fa5ec1b-fd0a-4bbf-927e-d7f09fcdd0dc
+                        SimulationIndex: 0
+                        Prefab: aee73c52-f776-44d6-95ed-6ef6cd98f97f:BulletCube
+                        Instancing: ref!! 8cee2383-63a2-4c6d-a812-06ae58127f51
+        -   Entity:
+                Id: 362fa37b-8f3a-4f5c-8dac-a693fec84275
+                Name: Cube
+                Components:
+                    13afb030c287f367b9481816d47a7c6f: !TransformComponent
+                        Id: 7bbf17f9-5b35-4083-b03a-d3067bd782f3
+                        Position: {X: 0.0, Y: -23.643442, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f480d490721332aed03cd9dd38279489: !ModelComponent
+                        Id: d42ac73c-20bd-4fc5-a839-348a5dde1fd4
+                        Model: d07f388a-a548-46a8-97c7-9cf36fd77954:Cube
+                        Materials: {}
+                    ca629e8534cfd5d6e7bf34cbd733f5f5: !InstancingComponent
+                        Id: 8cee2383-63a2-4c6d-a812-06ae58127f51
+                        Type: !InstancingEntityTransform {}
+        -   Entity:
+                Id: 8c8adcdd-3411-4f2e-b3ac-1ea0dc00302c
+                Name: Camera
+                Components:
+                    e39034f5b275c46d5d408c50236f70a3: !TransformComponent
+                        Id: e6ffe09f-2525-49e6-92ac-678fc1593ee8
+                        Position: {X: 0.0, Y: 22.305126, Z: 73.49768}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    8987fcb77aa29faf3d0a0945688f2353: !CameraComponent
+                        Id: 03dbc3e0-aaad-4990-9533-6edc8924de81
+                        Name: null
+                        Projection: Perspective
+                        Slot: 0d0f135c-401a-4882-bcd5-102f4087521e
+                    f75246ac99102811087f03f336bd583a: !PhysicsComparison.BasicCameraController,PhysicsComparison
+                        Id: e2a93852-2d9f-4f60-8d5b-0b786f1da7e6
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+                    220f930b83be5fc817f4a45fb11bd7bf: !PhysicsComparison.GameProfiler,PhysicsComparison
+                        Id: bbbbe10d-a963-449d-87b9-b5df39079061
+                        Enabled: true
+                        TextColor: {R: 144, G: 238, B: 144, A: 255}
+                        RefreshTime: 500.0
+                        SortingMode: ByTime
+                        FilteringMode: Fps
+                        ResultPage: 1
+        -   Entity:
+                Id: becd47bf-09c4-46e5-be18-0a64d06ac13e
+                Name: Floor
+                Components:
+                    f57ad4c1de805f02a5716b1703a2ca97: !TransformComponent
+                        Id: 8ff0defe-af35-47e6-879a-ef1431370705
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 200.0, Y: 1.0, Z: 200.0}
+                        Children: {}
+                    f841fe107556a6c81d1e266130a1b515: !ModelComponent
+                        Id: b9804e38-b535-4d7c-9e2f-d21b6f6985fa
+                        Model: d07f388a-a548-46a8-97c7-9cf36fd77954:Cube
+                        Materials: {}
+                    cadb5dd256968380a64f14f0be00b9b4: !StaticColliderComponent
+                        Id: 0dea3bc9-85cf-4d81-afd9-4b4b686ac811
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            15c2610930cb86b045b4935d0d54bb5f: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 200.0, Y: 1.0, Z: 200.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+        -   Entity:
+                Id: c050fedd-6737-4275-90d7-fe341b773200
+                Name: Skybox
+                Components:
+                    0ff688f41a470ed812dc8b3af77cf084: !TransformComponent
+                        Id: 4bd1aec8-d8bb-43c5-a9ba-ee0ed63c4725
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    88f2b4819b37c0daf3d59914f59205fb: !BackgroundComponent
+                        Id: cdcf1f00-f1c4-494d-9dcb-7a3d6cad7130
+                        Texture: e950735c-f465-4f74-abf9-cbe7ca8e5753:Skybox texture
+                    a56f3cc8274c5cc11c2db8b330600a6f: !LightComponent
+                        Id: 8bd79e29-c629-4b45-b6af-43440228d663
+                        Type: !LightSkybox
+                            Skybox: 8b0a1185-a7f6-4d5c-a189-aec531dd092e:Skybox
+        -   Entity:
+                Id: c4ad98ac-e2e8-4829-8c88-6ee16cf99eb7
+                Name: Directional light
+                Components:
+                    4812d2e5e89c4b58bc76d76c9e12eef4: !TransformComponent
+                        Id: 5b93f39c-908a-4f09-95e3-fd8258d4dffd
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: -0.25881904, Y: 0.0, Z: 0.0, W: 0.9659258}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b9466caac9ff2a1363078c85c443e06c: !LightComponent
+                        Id: d5ee26b0-5673-46b0-b7ae-79c21be7d27e
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow: !LightDirectionalShadowMap
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0
+        -   Entity:
+                Id: e439ea40-d38b-4524-afbe-cd926c6f452d
+                Name: EnsureBepuProcessor
+                Components:
+                    75279321016f36548ec5d671e504c11c: !TransformComponent
+                        Id: 8c14aac9-76b2-49d7-80b8-15649b2f868c
+                        Position: {X: 0.0, Y: 0.0, Z: -195.08575}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    a365a65440f35a8434c73d7d370b9f00: !Stride.BepuPhysics.Components.Containers.StaticContainerComponent,Stride.BepuPhysics
+                        Id: b971de89-8246-496f-9007-6799e6f57acc
+                        SimulationIndex: 0
+                        SpringFrequency: 30.0
+                        SpringDampingRatio: 3.0
+                        FrictionCoefficient: 1.0
+                        MaximumRecoveryVelocity: 1000.0
+                        ColliderGroupMask: 255
+                        ColliderFilterByDistanceId: 0
+                        ColliderFilterByDistanceX: 0
+                        ColliderFilterByDistanceY: 0
+                        ColliderFilterByDistanceZ: 0
+                        IgnoreGlobalGravity: false
+                    79df4cde09da3393d97418ec851cc680: !Stride.BepuPhysics.Components.Colliders.BoxColliderComponent,Stride.BepuPhysics
+                        Id: 72ad7968-1e43-459d-8462-bde525e19658
+                        Mass: 1.0
+                        Size: {X: 1.0, Y: 1.0, Z: 1.0}

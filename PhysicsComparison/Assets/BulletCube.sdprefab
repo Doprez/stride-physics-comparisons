@@ -1,0 +1,43 @@
+!PrefabAsset
+Id: aee73c52-f776-44d6-95ed-6ef6cd98f97f
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 6fda1893-b63c-47a2-a809-1a0655959221
+    Parts:
+        -   Entity:
+                Id: 6fda1893-b63c-47a2-a809-1a0655959221
+                Name: BulletCube
+                Components:
+                    338aafa9d6c48d955e619e782ff16ed1: !TransformComponent
+                        Id: a22eb964-3029-4e21-ae50-5b978af91848
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    06717d59e86d0b884beebbd40df46032: !RigidbodyComponent
+                        Id: 4d88e107-d871-4b0b-a6cf-37d9515cbd15
+                        CanSleep: true
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: false
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: 0.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            5c7084e14ef469b553ed31c48305d1d2: !BoxColliderShapeDesc
+                                Is2D: false
+                                Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    842d60b32a8b195bdf68413935bd6058: !InstanceComponent
+                        Id: 98286a5b-0631-432a-814a-9fa72ce67d42
+                        Master: null
