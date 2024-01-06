@@ -41,10 +41,12 @@ Hierarchy:
                         ColliderFilterByDistanceY: 0
                         ColliderFilterByDistanceZ: 0
                         IgnoreGlobalGravity: false
-                    4fa77347324237efdc2e0241efb52f3e: !Stride.BepuPhysics.Components.Colliders.BoxColliderComponent,Stride.BepuPhysics
-                        Id: 915c70d1-923d-4172-8a95-3f5f7f976b49
-                        Mass: 1.0
-                        Size: {X: 200.0, Y: 1.0, Z: 200.0}
+                        Colliders:
+                            84dd84fcea8423ed0b2dae662637fd57: !Stride.BepuPhysics.Definitions.Colliders.BoxCollider,Stride.BepuPhysics
+                                Mass: 1.0
+                                PositionLocal: {X: 0.0, Y: 0.5, Z: 0.0}
+                                RotationLocal: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                                Size: {X: 200.0, Y: 0.1, Z: 200.0}
         -   Entity:
                 Id: 1c17a94a-7cae-4a44-9545-d5c408487683
                 Name: Skybox
@@ -132,10 +134,7 @@ Hierarchy:
                         ColliderFilterByDistanceY: 0
                         ColliderFilterByDistanceZ: 0
                         IgnoreGlobalGravity: false
-                    79df4cde09da3393d97418ec851cc680: !Stride.BepuPhysics.Components.Colliders.BoxColliderComponent,Stride.BepuPhysics
-                        Id: 7a699c3d-1ac5-428c-8caa-d61dd213676f
-                        Mass: 1.0
-                        Size: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Colliders: {}
         -   Entity:
                 Id: 6c6c3a6e-0cc3-4074-af16-a7ec6a1e6b56
                 Name: Cube

@@ -31,9 +31,11 @@ Defaults:
                 PoseAngularDamping: 0.05
                 SolveIteration: 1
                 SolveSubStep: 1
+                SimulationFixedStep: 8
+                MaxStepPerFrame: 1
                 ParallelUpdate: true
-                SimulationFixedStep: 8.0
-                MaxStepPerFrame: 3
+                SoftStartDuration: 1000
+                SoftStartSoftness: 4
     - !Stride.Physics.PhysicsSettings,Stride.Physics
         Flags: None
         FixedTimeStep: 0.016666668
